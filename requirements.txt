@@ -1,0 +1,4 @@
+Flask
+requests
+icalendar
+beautifulsoup4
