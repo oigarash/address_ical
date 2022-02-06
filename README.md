@@ -5,8 +5,9 @@
 Dokcerなどのコンテナを走らせる環境が必要です。
 
 ```
-docker build . -t address_ical
-docker run -d -p 5000:5000 -e ADDRESS_USER=<ADDressのユーザ名> -e ADDRESS_PASSWORD=<ADDressのパスワード> address_ical:latest
+docker build . -t address_ical # 最初だけ
+# Docker コンテナ起動
+docker run -d -p 5000:5000 --name address_ical -e ADDRESS_USER=<ADDressのユーザ名> -e ADDRESS_PASSWORD=<ADDressのパスワード> address_ical:latest
 ```
 
 iCalに対応しているカレンダーアプリでカレンダー登録をします。
